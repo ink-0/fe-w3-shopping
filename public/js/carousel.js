@@ -9,7 +9,7 @@ console.log(nextBtn);
 let counter =1;
 const size = carouselContents[0].clientWidth;
 const len = carouselContents.length;
-console.log(size);
+console.log(len);
 carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 //ease-in-out 효과가 천천히 시작해 천천히 끝남 
@@ -22,10 +22,10 @@ nextBtn.addEventListener('click',()=>{
 
 
 prevBtn.addEventListener('click',()=>{
-    if(counter<0) return;
+    if(counter<=0) return;
     carouselSlide.style.transition = "transform 0.3s ease-in-out"
     counter--;
-    carouselSlide.style.transform = "translateX(-"+ -size*counter+"px)";
+    carouselSlide.style.transform = "translateX("+ -size*counter+"px)";
 });
 
 carouselSlide.addEventListener('transitionend',()=>{
