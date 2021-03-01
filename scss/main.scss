@@ -59,11 +59,24 @@ main {
                     color: $line_borderColor;
                     cursor: pointer;
                 }
-
             }
         }
-
     }
+}
+
+.slide__box {
+    margin :10px 10px 10px 10px;
+    width: 485px;
+    height: 340px;
+    position: relative;
+
+    overflow: hidden;
+
+}
+.slide__list {
+    height: 340px;
+    display: flex;
+
 }
 
 .item {
